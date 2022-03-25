@@ -42,3 +42,9 @@ ssh someinternalhost
 bastion_IP = 178.154.195.10
 someinternalhost_IP = 10.129.0.6
 ```
+# ДЗ 4
+Данные для проверки приложения
+```
+testapp_IP = 51.250.15.174
+testapp_port = 9292
+```
