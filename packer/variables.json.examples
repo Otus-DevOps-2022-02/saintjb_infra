@@ -1,0 +1,7 @@
+{
+    "folder_id": "vsftp2b1gndlav8er",
+    "source_image_id": "fd8vtbcqfdertds0",
+    "service_account_key_file": "key.json",
+    "preemptible": "true"
+
+}
