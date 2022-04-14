@@ -1,14 +1,6 @@
-terraform {
-  required_providers {
-    yandex = {
-      source = "yandex-cloud/yandex"
-    }
-  }
-}
-
 provider "yandex" {
   version = "~> 0.35"
-  service_account_key_file = var.service_acc_key
+  service_account_key_file = var.service_account_key_file
   cloud_id = var.cloud_id
   folder_id = var.folder_id
   zone = var.zone
@@ -33,7 +25,7 @@ resource "yandex_compute_instance" "app" {
   }
   
   metadata = {
-    ssh-keys = "ubuntu:${file("var.public_key_path)}"
+    ssh-keys = "ubuntu:${file(var.public_key_path)}"
   }
 
   provisioner "file" {
@@ -50,7 +42,7 @@ resource "yandex_compute_instance" "app" {
     host = yandex_compute_instance.app.network_interface.0.nat_ip_address
     user = "ubuntu"
     agent = false
-    private_key = file("var.private_key_path")
+    private_key = file(var.private_key_path)
   }
 }
 

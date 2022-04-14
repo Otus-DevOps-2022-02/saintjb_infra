@@ -9,10 +9,10 @@ variable zone {
   default = "ru-central1-a"
 }
 variable public_key_path {
-  description = "Public key path"
+  description = "Pub key"
 }
 variable private_key_path {
-  description = "Private key path"
+  description = "Priv key"
 }
 variable region_id {
   description = "region id"
@@ -26,5 +26,5 @@ variable service_acc_key {
 }
 
 variable subnet_id {
-  description = "subnet id"
+  description = "Subnet ID"
 }
