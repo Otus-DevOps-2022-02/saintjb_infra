@@ -1,6 +1,6 @@
 provider "yandex" {
   version = "~> 0.35"
-  service_account_key_file = var.service_account_key_file
+  service_account_key_file = var.service_acc_key
   cloud_id = var.cloud_id
   folder_id = var.folder_id
   zone = var.zone
