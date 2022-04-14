@@ -1,0 +1,7 @@
+cloud_id                  = "ssft0"
+folder_id                 = "nvb09"
+image_id                  = "d0vbn"
+subnet_id                 = "v856"
+public_key_path           = "~/.ssh/ubuntu_rsa.pub"
+service_account_key_file  = "key.json"
+private_key_path          = "~/.ssh/ubuntu_rsa"
