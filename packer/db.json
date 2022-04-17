@@ -1,4 +1,9 @@
 {
+    "variables": {
+            "folder_id": "",
+            "source_image_family": "",
+            "service_account_key_file": ""
+    },
     "builders": [
         {
             "type": "yandex",
