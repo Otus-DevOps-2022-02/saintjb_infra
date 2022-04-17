@@ -9,3 +9,8 @@ variable subnet_id {
 variable app_disk_image {
   description = "Disk image for reddit app"
 }
+
+variable private_key_path {
+  description = "Private key"
+}
+
