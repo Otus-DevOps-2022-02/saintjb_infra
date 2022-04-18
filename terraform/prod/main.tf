@@ -20,7 +20,3 @@ module "db" {
   subnet_id       = var.subnet_id
 }  
 
-module "vpc" {
-  source          = "../modules/vpc"
-  net_zone = var.zone
-}
