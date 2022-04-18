@@ -1,39 +1,40 @@
-variable cloud_id {
-  description = "bngl1irg3c3h3u0qiofg"
+variable "cloud_id" {
+  description = "Cloud"
 }
-variable folder_id {
-  description = "bngndlav8ernrfljukjc"
+variable "folder_id" {
+  description = "Folder"
 }
-variable zone {
+variable "zone" {
   description = "Zone"
   default = "ru-central1-a"
 }
-variable public_key_path {
-  description = "Public key"
+variable "public_key_path" {
+  description = "Path to the public key used for ssh access"
 }
-variable private_key_path {
-  description = "Priv key"
+variable "private_key_path" {
+  description = "Path to the private key used for ssh access"
 }
-variable region_id {
-  description = "region id"
-  default = "ru-central-1"
+variable "image_id" {
+  description = "Disk image"
 }
-variable disk_img {
-  description = "Image of disk"
+variable "subnet_id" {
+  description = "Subnet"
+  default     = "e9bh9tugtt97uvs8ts8d"
 }
-variable service_acc_key {
+variable "service_account_key_file" {
   description = "key.json"
-  default = "key.json"
 }
-
-variable subnet_id {
-  description = "subnet id"
+variable "network_id" {
+  description = "default network"
 }
-
-variable app_disk_image {
+variable "region_id" {
+  description = "region"
+}
+variable "app_disk_image" {
   description = "Disk image for reddit app"
+  default     = "mmpceqrfrjru1j33u0qm"
 }
-
-variable db_disk_image {
-  description = "Disk image for reddit db"
+variable "db_disk_image" {
+  description = "Disk image for reddit app"
+  default     = "mmvpemf6b08pktajhs59e"
 }

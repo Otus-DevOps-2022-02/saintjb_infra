@@ -1,9 +1,11 @@
 #!/bin/bash
 set -e
 APP_DIR=${1:-$HOME}
-sudo rm /var/lib/dpkg/lock-frontend
+sudo apt-get update
+sudo rm /var/lib/apt/lists/lock
+sudo rm /var/cache/apt/archives/lock
 sudo rm /var/lib/dpkg/lock
-sudo dpkg --configure -a
+sudo rm /var/lib/dpkg/lock-frontend
 sudo apt-get install -y git
 git clone -b monolith https://github.com/express42/reddit.git $APP_DIR/reddit
 cd $APP_DIR/reddit

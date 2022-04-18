@@ -1,16 +1,14 @@
 variable public_key_path {
-  description = "Public key"
+  description = "Public key path"
 }
- 
-variable subnet_id {
-  description = "subnet"
-}
-
 variable app_disk_image {
-  description = "Disk image for reddit app"
+  description = "Disk image"
+  default = "vd8ceqrfr4ru1j33u0qm"
 }
-
+variable subnet_id {
+description = "Subnets"
+}
 variable private_key_path {
-  description = "Private key"
+  # Описание переменной
+  description = "Private key path"
 }
-

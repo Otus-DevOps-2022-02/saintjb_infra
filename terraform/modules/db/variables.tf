@@ -1,11 +1,10 @@
 variable public_key_path {
-  description = "Public key"
+  description = "Public key path"
 }
-
-variable subnet_id {
-  description = "subnet id"
-}
-
 variable db_disk_image {
-  description = "Disk image for reddit db"
+  description = "Disk image"
+  default = "fd8emf6b0j9ktajhs59e"
+}
+variable subnet_id {
+description = "Subnets"
 }
