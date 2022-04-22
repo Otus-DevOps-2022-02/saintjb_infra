@@ -1,7 +1,6 @@
 {
-    "folder_id": "vsftp2b1gndlav8er",
-    "source_image_family": "ubuntu-1604-lts",    
-    "service_account_key_file": "key.json",
+    "folder_id": "b1gsaf730hdf047bo4e7",
+    "source_image_family": "ubuntu-1604-lts",
+    "service_account_key_file": "key.json"
     "preemptible": "true"
-
 }
