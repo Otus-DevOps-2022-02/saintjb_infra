@@ -3,14 +3,14 @@
   hosts: all
   become: true
   tasks:
-    - name: Adding a key
+    - name: Add a key
       apt_key:
-        url: "https://www.mongodb.org/static/pgp/server-4.2.asc"
-        state: present
+        id: EA312927
+        keyserver: keyserver.ubuntu.com
 
     - name: Add MongoDB repo
       apt_repository:
-        repo: deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/4.2 multiverse
+        repo: deb [ arch=amd64,arm64 ] http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse
         state: present
 
     - name: Install MongoDB
@@ -20,6 +20,7 @@
         
     - name: Enable mongodb-org
       systemd:
+        name: mongod
         enabled: yes
       
           
